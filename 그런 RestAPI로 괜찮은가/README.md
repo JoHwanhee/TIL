@@ -35,18 +35,20 @@ REST API는 분산 하이퍼미디어 시스템을 위한 아키텍쳐 스타일
 - cache
 - **uniform interface**
 - layered system
-- code-on-demand (optional) -> 서버에서 코드를 client로 보내어 바로 실행할 수 있어야한다
+- code-on-demand (optional)
+서버에서 코드를 client로 보내어 바로 실행할 수 있어야한다
 
-**uniform interface**
-- identification of resources
+**uniform interface 을 잘 만족 시켜야 REST 하다. 라고할 수있다.**
+- identification of resource
+리소스가 URI가 식별되어야한다.
+
 - manipulation of resources through representations
+리소스를 만들거나 삭제하거나할 때 HTTP 메세지에 표현을 담아야 한다. 
+
 - self-descriptive messages
-- hypermedia as the engine of application sate
-
-self-descriptive messages
  메세지는 스스로에 설명할 수 있어야 한다. 다음은 강연자가 설명하는 self-descriptive messages의 예시이다. Response Message에서 HTTP의 상태 설명과 body의 media type을 충분히 설명하고 있어 self-descriptive 하다고 하는 것이다.
-
 ![](./Images/Self-descriptive%20message.jpg)
 
-
-
+- hypermedia as the engine of application sate
+어플리케이션의 상태는 hyperlink를 통해서 항상 전이가 되어야한다. 
+![](./Images/HATEOAS.jpg)
