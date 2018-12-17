@@ -1,7 +1,7 @@
 
 # 그런 REST API로 괜찮은가?
 
-![]({{site.baseurl}}/Images/web_page_first_screen.jpg)
+![](./Images/web_page_first_screen.jpg)
 
 
  DEVIEW 2017 2-2 SECTION [그런 REST API로 괜찮은가](https://tv.naver.com/v/2292653) 영상을 보고나서 작성 하는 글이다. 영상을 본 뒤 전 회사에서 작성했던 REST API를 돌이켜 생각해보니 이런 REST API로는 괜찮지 않았다. 당시에도 REST API 설계에 관심이 많았으나, 내가 작성했던 것들은 무언가 하나씩 잘못되어있었다.
