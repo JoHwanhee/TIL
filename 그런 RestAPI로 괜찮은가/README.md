@@ -46,7 +46,7 @@ REST API는 분산 하이퍼미디어 시스템을 위한 아키텍쳐 스타일
 self-descriptive messages
  메세지는 스스로에 설명할 수 있어야 한다. 다음은 강연자가 설명하는 self-descriptive messages의 예시이다. Response Message에서 HTTP의 상태 설명과 body의 media type을 충분히 설명하고 있어 self-descriptive 하다고 하는 것이다.
 
-![]({{site.baseurl}}/Images/Self-descriptive message.jpg)
+![](.그런%20RestAPI로%20괜찮은가/Images/Self-descriptive message.jpg)
 
 
 
