@@ -26,7 +26,7 @@ $ exit
 #### 의심가는 부분들
 1. 내 서버가 Naver cloude platform(NCP) 인데, NCP에서 관련한 부분을 막았을 것이다?
 2. 파이썬 코드에 반복하는 부분이 threading에 있는 timer기능인데 이 부분이 background process에선 동작하지 않는다?
-3. disown을 할경우 일정 시간이 지나면 자동으로 process가 사라진다?
+3. disown을 할경우 일정 시간이 지나고 난 뒤 process가 자동으로 사라진다?
 4. 코드에 메모리 누수가 있어, 안 보고 있는 사이에 메모리가 터졌을 것이다?
 5. 데몬으로돌려야한다?
 
