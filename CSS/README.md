@@ -1,7 +1,7 @@
 # CSS 학습 내용
 CSS는 html에서 `기능적 요소와 디자인적 요소를 분리하고자` 개발된 언어이다.
 
-#### 만약 다음과 같은 코드에서 글자의 색상을 변경하고자 한다면.
+#### 만약 다음과 같은 코드에서 a태그 글자의 색상을 변경하고자 한다면.
 ```html
   <h1><a href="index.html">WEB</a></h1>
   <ol>
@@ -43,7 +43,7 @@ CSS는 html에서 `기능적 요소와 디자인적 요소를 분리하고자` �
   <h1><a href="index.html">WEB</a></h1>
   <ol>
     <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html" style="color:red; text-decoration:underline;">CSS</a></li>
+    <li><a href="2.html">CSS</a></li>
     <li><a href="3.html">JavaScript</a></li>
   </ol>
   <h2>CSS</h2>
