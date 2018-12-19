@@ -9,6 +9,7 @@ CSS레이아웃 구성 방법 중 가장 최근에 나온 기술로 그리드 �
 #### ETC
 - div, span은 모두 레이아웃을 위한 태그인데 div는 block level이고 span은 inline level이다.
 
+#### Source
 ```html
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
