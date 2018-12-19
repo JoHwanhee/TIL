@@ -3,6 +3,10 @@ CSS 선택자를 스스로 알아내는 방법
 
 추가정보 : https://www.w3schools.com/csSref/css_selectors.asp
 
+- ID는 한번만 등장하는것이 좋다.
+- 우선순위는 구체적일수록 높다.
+- 우선순위가 같으면 더 나중에 등장한 Selector가 적용된다.
+
 ```html
 <!DOCTYPE html>
 <html>
