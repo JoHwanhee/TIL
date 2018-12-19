@@ -45,4 +45,4 @@ html 에서 태그 하나하나를 박스로 취급하여 부피감을 갖게 �
 </html>
 ```
 
-[](./images/boxmodel.jpg)
+![](./images/boxmodel.jpg)
