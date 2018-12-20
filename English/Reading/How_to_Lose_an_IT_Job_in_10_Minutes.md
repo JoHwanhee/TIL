@@ -1,5 +1,6 @@
 article : https://hackernoon.com/how-to-lose-an-it-job-in-10-minutes-3d63213c8370
 
+<pre>
 How to Lose an IT Job in 10 Minutes.
 10분안에 IT 직업을 잃는 방법.
 
@@ -44,3 +45,4 @@ I’m a frontend developer, I generally don’t implement interview-like algorit
 
 How much do these tests tell about a candidate anyway?
 그래서, 이 테스트들이 지원자들한테 얼마나 많이 말해주는가?
+</pre>
