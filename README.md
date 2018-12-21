@@ -21,7 +21,7 @@
 1. [js 기본 개념](./JS)
 
 #### Security
-1. [XSS](./Security/XSS.md)
+1. [XSS](./Security/XSS/)
 
 #### Eglish Reading
 1. [How to Lose an IT Job in 10 Minutes - 1](./English/Reading/How_to_Lose_an_IT_Job_in_10_Minutes.md)
