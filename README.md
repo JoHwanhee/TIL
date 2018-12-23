@@ -4,6 +4,9 @@
 
 ### 토픽 정리
 
+#### C Language
+1. [Object, Types, Variables](./C/object_type_variables.md)
+
 #### HTTP 
 1. [그런 REST API로 괜찮은가?](./RestAPI)
 
