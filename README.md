@@ -6,6 +6,7 @@
 
 #### C Language
 1. [Object, Types, Variables](./C/object_type_variables.md)
+2. [Double Linked List](https://github.com/JoHwanhee/DataStructures/blob/master/LinkedList.c)
 
 #### HTTP 
 1. [그런 REST API로 괜찮은가?](./RestAPI)
