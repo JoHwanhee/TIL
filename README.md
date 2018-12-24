@@ -11,7 +11,8 @@
 1. [Object, Types, Variables](./C/object_type_variables.md)
 
 #### HTTP 
-1. [그런 REST API로 괜찮은가?](./RestAPI)
+1. [The basic of HTTP](./HTTP/The_basic_of_web.md)
+1. [그런 REST API로 괜찮은가?](./HTTP/RestAPI)
 
 #### Linux
 1. [프로세스 유지한채 ssh exit하는 방법](./Linux/run_background_when_ssh_exit.md)
