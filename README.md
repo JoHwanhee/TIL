@@ -6,7 +6,7 @@
 1. [프로세스 유지한채 ssh exit하는 방법](./Linux/run_background_when_ssh_exit.md)
 
 ## 프로그래밍 언어
-#### C
+#### The C Programming language
 1. [Object, Types, Variables](./C/object_type_variables.md)
 
 #### CSS 
@@ -16,7 +16,7 @@
 4. [CSS Grid](./CSS/grid.md)
 5. [CSS MediaQuery](./CSS/mediaquery.md)
 
-#### js
+#### Javascript
 1. [js 기본 개념](./JS)
 
 ## 네트워크
