@@ -27,6 +27,7 @@
 ## 자료구조
 #### 선형
 1. [Double Linked List](https://github.com/JoHwanhee/DataStructures/blob/master/LinkedList.c)
+2. [A stack using singly linked list)(https://github.com/JoHwanhee/DataStructures/blob/master/Stack.c)
 
 ## 보안
 #### 웹 보안
