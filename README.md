@@ -8,6 +8,7 @@
 ## 프로그래밍 언어
 #### The C Programming language
 1. [Object, Types, Variables](./C/object_type_variables.md)
+2. [Pointer](./C/pointer.md)
 
 #### CSS 
 1. [CSS 기본 개념](./CSS)
