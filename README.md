@@ -41,6 +41,7 @@
 3. [Rapunzel 받아쓰기, 따라읽기 05:00 ~ 08:23](./English/Rapunzel/0500_0823.md)
 4. [Rapunzel 받아쓰기, 따라읽기 08:23 ~ 10:34](./English/Rapunzel/0823_1034.md)
 5. [Rapunzel 받아쓰기, 따라읽기 10:34 ~ 12:37](./English/Rapunzel/1034_1237.md)
+6. [Rapunzel 받아쓰기, 따라읽기 12:37 ~ 12:51](./English/Rapunzel/1237_1251.md)
 
 #### 독해연습
 1. [How to Lose an IT Job in 10 Minutes - 1](./English/Reading/How_to_Lose_an_IT_Job_in_10_Minutes.md)
