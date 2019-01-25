@@ -34,7 +34,8 @@
 3. [Queue](https://github.com/JoHwanhee/DataStructures/blob/master/Queue.c)
 4. [Tree](https://github.com/JoHwanhee/DataStructures/blob/master/Stack.c)
 5. [Binary Expression Tree](https://github.com/JoHwanhee/DataStructures/tree/master/BinaryExpressionTree/src)
-6. [Jaccard similarity 유사도 측정](https://github.com/JoHwanhee/JaccardSimilarity)
+6. [Dictionary](https://github.com/JoHwanhee/DataStructures/blob/master/dictionary.h)
+7. [Jaccard similarity 유사도 측정](https://github.com/JoHwanhee/JaccardSimilarity)
 
 ## 보안
 #### 웹 보안
