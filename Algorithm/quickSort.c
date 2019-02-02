@@ -6,30 +6,27 @@ void swap(int *x, int *y){
 	*y = temp;
 }
 
-int partition(int *arr, int _left, int _right) {
-	int left = _left;
-	int right = _right;
-	int pivot = left - 1;
+int partition(int *arr, int left, int right) {
+	int pivot = left + 1;
 	
 	while( left < right ) {
-		while( arr[left] < arr[pivot] ) left ++;
-		while( arr[right] > arr[pivot] ) right --;
+		while( arr[pivot] > arr[left] ) left ++;
+		while( arr[pivot] < arr[right] ) right --;
 		
 		if( left < right )
 		    swap(&arr[left], &arr[right]);
 	}
 	
 	swap(&arr[pivot], &arr[right]);
-	pivot = right;
 	
-	return pivot;
+	return right;
 }
 
 void quickSort(int *arr, int left, int right){
 	if(left < right ) {
     	int pivot = partition(arr, left, right);
-    	quickSort(arr, 1, pivot - 1);
-    	quickSort(arr, pivot + 2, right);
+    	quickSort(arr, left, pivot - 1);
+    	quickSort(arr, pivot + 1, right);
 	}
 }
 
