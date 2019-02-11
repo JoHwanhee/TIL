@@ -39,8 +39,6 @@ null또는 "" |0|
 "1,2" |3|
 "1,2:3" |6|
 
-![](./cycle.jpg)
-
 1. 테스트코드 만들기
 ```java
 public class StringCalculatorTest {
