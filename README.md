@@ -1,6 +1,9 @@
 # TIL (Today I Learned)
 📝 오늘 내가 무엇을 배웠는지 정리하고 기록합니다.
 
+## TDD
+1. [의식적 연습으로 TDD, 리팩토링 연습하기](./TDD/의식적연습으로TDD,리팩토링하기.MD)
+
 ## 운영체제
 #### Linux
 1. [프로세스 유지한채 ssh exit하는 방법](./Linux/run_background_when_ssh_exit.md)
@@ -42,6 +45,7 @@
 ## 보안
 #### 웹 보안
 1. [XSS(Cross Site Scripting)](./Security/XSS/)
+FLUSH PRIVILEGES;
 
 ## Eglish
 #### Rapunzel 받아쓰기, 따라읽기
