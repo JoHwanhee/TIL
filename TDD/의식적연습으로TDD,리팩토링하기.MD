@@ -34,7 +34,7 @@ public class StringTest {
 쉽표(,) 또는 콜론(:)을 구분자로 갖는 문자열을 전달하는 경우 구분자를 기준으로 분리한 각 숫자의 합을 반환
 
 입력(input)|출력(output)
-----|----| 
+:----:|:----:| 
 null또는 "" |0|
 "1" |1|
 "1,2" |3|
@@ -250,7 +250,7 @@ public class StringCalculator {
 문자열 계산기에 숫자 이외의 값 또는 음수를 전달하는 경우 RuntimeException 예외를 throw한다.
 
 입력(input)|출력(output)
-----|----| 
+:----:|:----:| 
 null또는 "" |0|
 "1" |1|
 "1,2" |3|
