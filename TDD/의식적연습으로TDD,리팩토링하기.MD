@@ -109,7 +109,7 @@ public class StringCalculator {
 		return result;
 	}
 	
-	priavte static int sum(String[] valuse) {
+	private static int sum(String[] valuse) {
 		int result = 0;
 		
 		for(String value : valuse) {
@@ -133,7 +133,7 @@ public class StringCalculator {
 		return sum(valuse);
 	}
 	
-	priavte static int sum(String[] valuse) {
+	private static int sum(String[] valuse) {
 		int result = 0;
 		for(String value : valuse) {
 			result += Integer.parseInt(value);
@@ -157,7 +157,7 @@ public class StringCalculator {
 		return sum(numbers);
 	}
 	
-	priavte static int sum(int[] numbers) {
+	private static int sum(int[] numbers) {
 		int result = 0;
 		for(int number : numbers) {
 			result += number;
@@ -165,7 +165,7 @@ public class StringCalculator {
 		return result;
 	}
 	
-	priavte static int[] toInts(String[] valuse) {
+	private static int[] toInts(String[] valuse) {
 		int[] numbers = new int[valuse.length];
 		for(int i = 0; i < valuse.length; i++) {
 			numbers[i] = Integer.parseInt(valuse[i]);
@@ -187,7 +187,7 @@ public class StringCalculator {
 		return sum(toInts(text.split(",|:")));
 	}
 	
-	priavte static int sum(int[] numbers) {
+	private static int sum(int[] numbers) {
 		int result = 0;
 		for(int number : numbers) {
 			result += number;
@@ -195,7 +195,7 @@ public class StringCalculator {
 		return result;
 	}
 	
-	priavte static int[] toInts(String[] valuse) {
+	private static int[] toInts(String[] valuse) {
 		int[] numbers = new int[valuse.length];
 		for(int i = 0; i < valuse.length; i++) {
 			numbers[i] = Integer.parseInt(valuse[i]);
@@ -217,15 +217,15 @@ public class StringCalculator {
 		return sum(toInts(split(text)));
 	}
 	
-	priavte static boolean isBlank(String text) {
+	private static boolean isBlank(String text) {
 		return text == null || text.isEmpty();
 	}
 	
-	priavte static String[] split(String text) {
+	private static String[] split(String text) {
 		return text.split(",|:");
 	}
 	
-	priavte static int sum(int[] numbers) {
+	private static int sum(int[] numbers) {
 		int result = 0;
 		for(int number : numbers) {
 			result += number;
@@ -233,7 +233,7 @@ public class StringCalculator {
 		return result;
 	}
 	
-	priavte static int[] toInts(String[] valuse) {
+	private static int[] toInts(String[] valuse) {
 		int[] numbers = new int[valuse.length];
 		for(int i = 0; i < valuse.length; i++) {
 			numbers[i] = Integer.parseInt(valuse[i]);
@@ -266,15 +266,15 @@ public class StringCalculator {
 		return sum(toInts(split(text)));
 	}
 	
-	priavte static boolean isBlank(String text) {
+	private static boolean isBlank(String text) {
 		return text == null || text.isEmpty();
 	}
 	
-	priavte static String[] split(String text) {
+	private static String[] split(String text) {
 		return text.split(",|:");
 	}
 	
-	priavte static int sum(int[] numbers) {
+	private static int sum(int[] numbers) {
 		int result = 0;
 		for(int number : numbers) {
 			result += number;
@@ -282,7 +282,7 @@ public class StringCalculator {
 		return result;
 	}
 	
-	priavte static int[] toInts(String[] valuse) {
+	private static int[] toInts(String[] valuse) {
 		int[] numbers = new int[valuse.length];
 		for(int i = 0; i < valuse.length; i++) {
 			numbers[i] = toInt(valuse[i]);
@@ -290,7 +290,7 @@ public class StringCalculator {
 		return numbers;
 	}
 	
-	priavte static int[] toInt(String value) {
+	private static int[] toInt(String value) {
 		int number = Integer.parseInt(value);
 		
 		if(number < 0) {
@@ -339,15 +339,15 @@ public class StringCalculator {
 		return sum(toInts(split(text)));
 	}
 	
-	priavte static boolean isBlank(String text) {
+	private static boolean isBlank(String text) {
 		return text == null || text.isEmpty();
 	}
 	
-	priavte static String[] split(String text) {
+	private static String[] split(String text) {
 		return text.split(",|:");
 	}
 	
-	priavte static int sum(int[] numbers) {
+	private static int sum(int[] numbers) {
 		Positive result = new Positive(0);
 		for(Positive number : numbers) {
 			result.add(number);
@@ -355,7 +355,7 @@ public class StringCalculator {
 		return result.getNumber();
 	}
 	
-	priavte static Positive[] toInts(String[] valuse) {
+	private static Positive[] toInts(String[] valuse) {
 		Positive[] numbers = new int[valuse.length];
 		for(int i = 0; i < valuse.length; i++) {
 			numbers[i] = new Positive(valuse[i]);
