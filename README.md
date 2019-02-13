@@ -27,7 +27,7 @@
 1. [node js 기본 설정](./nodejs)
 
 #### python
-1. [__init.py 파일이란?](./python/__init__.md)
+1. [__init.py 파일이란?](./Python/__init__.md)
 
 ## 네트워크
 #### HTTP
