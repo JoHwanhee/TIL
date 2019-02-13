@@ -9,7 +9,7 @@
 1. [프로세스 유지한채 ssh exit하는 방법](./Linux/run_background_when_ssh_exit.md)
 
 ## 프로그래밍 언어
-#### The C Programming language
+#### C
 1. [Object, Types, Variables](./C/object_type_variables.md)
 2. [Pointer](./C/pointer.md)
 
@@ -25,6 +25,9 @@
 
 #### Node.Js
 1. [node js 기본 설정](./nodejs)
+
+#### python
+1. [__init.py 파일이란?](./python/__init__.md)
 
 ## 네트워크
 #### HTTP
