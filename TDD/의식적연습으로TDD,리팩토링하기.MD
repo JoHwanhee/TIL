@@ -2,7 +2,9 @@
 
 오키콘 박재성님의 강연을 토대로 공부한 내용 정리글 입니다.
 
-[[OKKYCON: 2018] 박재성 - 의식적인 연습으로 TDD, 리팩토링 연습하기](https://youtu.be/cVxqrGHxutU)
+영상 링크 : [[OKKYCON: 2018] 박재성 - 의식적인 연습으로 TDD, 리팩토링 연습하기](https://youtu.be/cVxqrGHxutU)
+발표자료 : https://www.slideshare.net/OKJSP/okkycon-tdd
+
 
 **1단계 - 단위 테스트 연습**
 - 알고리즘을 학습한다면, 알고리즘에 대한 단위 테스트 연습을 한다.
