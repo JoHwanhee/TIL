@@ -33,7 +33,7 @@
 #### HTTP
 1. [The basic of HTTP](./HTTP/The_basic_of_web.md)
 2. [그런 REST API로 괜찮은가?](./HTTP/RestAPI)
-3. [Java로 Http 라이브러리 만들어보기](./HTTP/RestAPI)
+3. [Java로 Http 라이브러리 만들어보기-1](./HTTP/NIOHttpServer/day1.md)
 
 ## 자료구조 & 알고리즘
 1. [Double Linked List](https://github.com/JoHwanhee/DataStructures/blob/master/LinkedList.c)
