@@ -1,7 +1,5 @@
----
 ### 가상환경이란?  
-프로젝트를 진행하다보면 외부 패키지의 버전관리와 디펜던시 관리는 필수적으로 진행되어야 한다. (프로젝트는 혼자 하는게 아니기 때문에
-파이썬에서는 이러한 관리를 가상환경 설정으로 관리를 하고 있다.
+프로젝트를 진행하다보면 외부 패키지의 버전관리와 디펜던시 관리는 필수적으로 진행되어야 한다. 파이썬에서는 디펜던시 관리를 가상환경으로 관리를 하고 있다.
 
 ---
 ### 설정
@@ -27,7 +25,7 @@ venv
 ---
 ### 패키지 설치해보기
 
-Flask를 설치하고 실행해보자
+Flask를 설치하고 실행해보자.
 
 ```
 (venv) [root@s16786679aff testProject]#pip3 install flask
@@ -62,7 +60,7 @@ if __name__ == '__main__':
 ---
 ### 가상환경 종료
 
-아래와 같이 가상환경을 빠져나올 수 있습니다.
+아래와 같이 가상환경을 빠져나올 수 있다.
 ```
 (venv) [root@s16786679aff testProject]# deactivate
 [root@s16786679aff testProject]#
@@ -71,14 +69,14 @@ if __name__ == '__main__':
 ---
 ### 디펜던시 관리하기 requirements.txt
 
-아래와 같이 입력하면 requirements.txt 파일이 생성된걸 볼 수 있습니다.
+아래와 같이 입력하면 requirements.txt 파일이 생성된걸 볼 수 있다.
 ```
 [root@s16786679aff testProject]# pip freeze > requirements.txt
 [root@s16786679aff testProject]# ls
 app.py  requirements.txt  venv
 ```
 
-vi requirements.txt 로 열어보면 현재 관리되고 있는 디펜던시를 확인할 수 있습니다.
+vi requirements.txt 로 열어보면 현재 관리되고 있는 디펜던시를 확인할 수 있다.
 ```
       1 bottle==0.12.16
       2 Click==7.0
@@ -97,4 +95,4 @@ vi requirements.txt 로 열어보면 현재 관리되고 있는 디펜던시를 
      15 Werkzeug==0.14.1
 ```
 
-새로운 패키지를 추가하고 pip install -r requirements.txt를 통해 패키지를 관리할 수 있습니다.
+새로운 패키지를 추가하고 pip install -r requirements.txt를 통해 패키지를 관리할 수 있다.

@@ -44,9 +44,10 @@
 4. [Tree](https://github.com/JoHwanhee/DataStructures/blob/master/Stack.c)
 5. [Binary Expression Tree](https://github.com/JoHwanhee/DataStructures/tree/master/BinaryExpressionTree/src)
 6. [Dictionary](https://github.com/JoHwanhee/DataStructures/blob/master/dictionary.h)
-7. [Jaccard similarity 유사도 측정](https://github.com/JoHwanhee/JaccardSimilarity)
+7. [Jaccard similarity](https://github.com/JoHwanhee/JaccardSimilarity)
 8. [Quick Sort](./Algorithm/quickSort.c)
 9. [Insert Sort](./Algorithm/insertSort.c)
+10. [Binary Search Tree](https://github.com/JoHwanhee/DataStructures/blob/master/BST.c)
 
 ## 보안
 #### 웹 보안
