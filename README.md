@@ -29,6 +29,7 @@
 
 #### python
 1. [__init.py 파일이란?](./Python/__init__.md)
+2. [가상환경이란?](./Python/venv.md)
 
 ## 네트워크
 #### HTTP
