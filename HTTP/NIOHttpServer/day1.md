@@ -67,7 +67,7 @@ serverSocketChannel.bind(new InetSocketAddress(PORT));
 ```
 
 2. Wait
-```
+```java
 SocketChannel socketChannel = serverSocketChannel.accept();
 InetSocketAddress isa = (InetSocketAddress) socketChannel.getRemoteAddress();
 System.out.println(isa.getHostName());
@@ -75,7 +75,7 @@ System.out.println(isa.getHostName());
 ```
 
 3. Read
-```
+```java
 ByteBuffer buffer = ByteBuffer.allocate(4096);
 int byteCount = socketChannel.read(buffer);
 System.out.println(byteCount);
@@ -90,7 +90,7 @@ System.out.println(data);
 4. Write
 
 테스트 용도이기에 HTTP Header를 하드코딩으로 넣어주었다.
-```
+```java
 byte[] data2 = "ok".getBytes();
 String content = "HTTP/1.1 200 OK\n" +
 				 "Server: Java HTTP NIO Server from hhcompany : 1.0\n" +
@@ -108,7 +108,7 @@ socketChannel.write(byteBuffer);
 ```
 
 5. Close
-```
+```java
 if (serverSocketChannel != null && serverSocketChannel.isOpen()) {
 	try {
 		serverSocketChannel.close();
