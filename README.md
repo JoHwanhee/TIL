@@ -47,6 +47,7 @@
 7. [Jaccard similarity 유사도 측정](https://github.com/JoHwanhee/JaccardSimilarity)
 8. [Quick Sort](./Algorithm/quickSort.c)
 9. [Insert Sort](./Algorithm/insertSort.c)
+10. [Binary Search Tree](https://github.com/JoHwanhee/DataStructures/blob/master/BST.c)
 
 ## 보안
 #### 웹 보안
