@@ -10,7 +10,7 @@ rpm -qa vsftpd*
 #### 설치
 ```
 [root@s16786679aff ~]# yum install vsftpd -y                                                                    
-Failed to set locale, defaulting to C                                                                           ```
+Failed to set locale, defaulting to C  
 Loaded plugins: fastestmirror, langpacks                                                                        
                                                                                                       
 (중략)
