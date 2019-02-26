@@ -60,7 +60,7 @@ echo 'password' | passwd --stdin testuser
 #### 접속테스트
 ```
 root@JHH:/mnt/c/Users/JoHwanHui# ftp 0.0.0.0  
-Connected to 106.10.35.123.                         ```
+Connected to 106.10.35.123.                         
 220 (vsFTPd 3.0.2)                                  
 Name (106.10.35.123:root): testuser                 
 331 Please specify the password.                    
