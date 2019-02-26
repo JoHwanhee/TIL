@@ -1,12 +1,10 @@
 ---
 ### 가상환경이란?  
----
 프로젝트를 진행하다보면 외부 패키지의 버전관리와 디펜던시 관리는 필수적으로 진행되어야 한다. (프로젝트는 혼자 하는게 아니기 때문에
 파이썬에서는 이러한 관리를 가상환경 설정으로 관리를 하고 있다.
 
 ---
 ### 설정
----
 
 python에서 제공되는 기능으로 간단히 설정할 수 있다. 아래처럼 하면 가상환경 폴더가 생성된다.
 
@@ -18,7 +16,6 @@ venv
 
 ---
 ### 활성화
----
 
 설정이 되었다면 아래와 같이 활성화를 해준다. (venv)가 보이면 성공.
 
@@ -29,28 +26,13 @@ venv
 
 ---
 ### 패키지 설치해보기
----
 
 Flask를 설치하고 실행해보자
 
 ```
 (venv) [root@s16786679aff testProject]#pip3 install flask
-Collecting flask
-  Using cached https://files.pythonhosted.org/packages/7f/e7/08578774ed4536d3242b14dacb4696386634607af824ea997202cd0edb4b/Flask-1.0.2-py2.py3-none-any.whl
-Collecting itsdangerous>=0.24 (from flask)
-  Using cached https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
-Collecting Jinja2>=2.10 (from flask)
-  Using cached https://files.pythonhosted.org/packages/7f/ff/ae64bacdfc95f27a016a7bed8e8686763ba4d277a78ca76f32659220a731/Jinja2-2.10-py2.py3-none-any.whl
-Collecting click>=5.1 (from flask)
-  Using cached https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl
-Collecting Werkzeug>=0.14 (from flask)
-  Using cached https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl
-Collecting MarkupSafe>=0.23 (from Jinja2>=2.10->flask)
-  Downloading https://files.pythonhosted.org/packages/b2/5f/23e0023be6bb885d00ffbefad2942bc51a620328ee910f64abe5a8d18dd1/MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl
-Installing collected packages: itsdangerous, MarkupSafe, Jinja2, click, Werkzeug, flask
+(중략)
 Successfully installed Jinja2-2.10 MarkupSafe-1.1.1 Werkzeug-0.14.1 click-7.0 flask-1.0.2 itsdangerous-1.1.0
-You are using pip version 9.0.3, however version 19.0.3 is available.
-You should consider upgrading via the 'pip install --upgrade pip' command.
 ```
 
 소스 작성
@@ -79,7 +61,6 @@ if __name__ == '__main__':
 
 ---
 ### 가상환경 종료
----
 
 아래와 같이 가상환경을 빠져나올 수 있습니다.
 ```
@@ -89,7 +70,6 @@ if __name__ == '__main__':
 
 ---
 ### 디펜던시 관리하기 requirements.txt
----
 
 아래와 같이 입력하면 requirements.txt 파일이 생성된걸 볼 수 있습니다.
 ```
