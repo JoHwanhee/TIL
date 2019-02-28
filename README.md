@@ -1,6 +1,20 @@
 # TIL (Today I Learned)
 📝 오늘 내가 무엇을 배웠는지 정리하고 기록합니다.
 
+## 자료구조 & 알고리즘
+1. [Double Linked List](https://github.com/JoHwanhee/DataStructures/blob/master/LinkedList.c)
+2. [A stack using singly linked list](https://github.com/JoHwanhee/DataStructures/blob/master/Stack.c)
+3. [Queue](https://github.com/JoHwanhee/DataStructures/blob/master/Queue.c)
+4. [Tree](https://github.com/JoHwanhee/DataStructures/blob/master/Stack.c)
+5. [Binary Expression Tree](https://github.com/JoHwanhee/DataStructures/tree/master/BinaryExpressionTree/src)
+6. [Dictionary without hash](https://github.com/JoHwanhee/DataStructures/blob/master/dictionary.h)
+7. [Jaccard similarity](https://github.com/JoHwanhee/JaccardSimilarity)
+8. [Quick Sort](./Algorithm/quickSort.c)
+9. [Insert Sort](./Algorithm/insertSort.c)
+10. [Binary Search Tree](https://github.com/JoHwanhee/DataStructures/blob/master/BST.c)
+11. [HashTable](https://github.com/JoHwanhee/DataStructures/blob/master/hashtable.c)
+
+
 ## TDD
 1. [의식적 연습으로 TDD, 리팩토링 연습하기](./TDD/의식적연습으로TDD,리팩토링하기.MD)
 
@@ -36,19 +50,6 @@
 1. [The basic of HTTP](./HTTP/The_basic_of_web.md)
 2. [그런 REST API로 괜찮은가?](./HTTP/RestAPI)
 3. [Java로 Http 라이브러리 만들어보기-1](./HTTP/NIOHttpServer/day1.md)
-
-## 자료구조 & 알고리즘
-1. [Double Linked List](https://github.com/JoHwanhee/DataStructures/blob/master/LinkedList.c)
-2. [A stack using singly linked list](https://github.com/JoHwanhee/DataStructures/blob/master/Stack.c)
-3. [Queue](https://github.com/JoHwanhee/DataStructures/blob/master/Queue.c)
-4. [Tree](https://github.com/JoHwanhee/DataStructures/blob/master/Stack.c)
-5. [Binary Expression Tree](https://github.com/JoHwanhee/DataStructures/tree/master/BinaryExpressionTree/src)
-6. [Dictionary without hash](https://github.com/JoHwanhee/DataStructures/blob/master/dictionary.h)
-7. [Jaccard similarity](https://github.com/JoHwanhee/JaccardSimilarity)
-8. [Quick Sort](./Algorithm/quickSort.c)
-9. [Insert Sort](./Algorithm/insertSort.c)
-10. [Binary Search Tree](https://github.com/JoHwanhee/DataStructures/blob/master/BST.c)
-11. [HashTable](https://github.com/JoHwanhee/DataStructures/blob/master/hashtable.c)
 
 ## 보안
 #### 웹 보안
