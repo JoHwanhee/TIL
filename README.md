@@ -18,7 +18,7 @@
 ## ML
 1. [Tensorflow Object Detection API 호출하는 코드 만들기](./ML/tf001.md)
 2. [자신만의 데이터셋(소규모)으로 재학습 시켜보기](./ML/tf002.md)
-3. [자신만의 데이터셋(소규모)으로 재학습 시켜보기](./ML/tf003.md)
+3. [tf.estimator 사용해서 성능 측정 해보기](./ML/tf003.md)
 
 
 ## TDD
