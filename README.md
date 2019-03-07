@@ -78,3 +78,4 @@ FLUSH PRIVILEGES;
 ## 공부하면서 참고한 사이트들 모음
 1. [Geeks for Geeks](https://www.geeksforgeeks.org/data-structures/)
 2. [그 유명한 soen.kr, 구 winapi](http://soen.kr/)
+3. [초보자를 위한 파이썬 1 ~ 300제](https://wikidocs.net/7014)
