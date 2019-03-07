@@ -76,5 +76,5 @@ FLUSH PRIVILEGES;
 1. [How to Lose an IT Job in 10 Minutes - 1](./English/Reading/How_to_Lose_an_IT_Job_in_10_Minutes.md)
 
 ## 공부하면서 참고한 사이트들 모음
-1. [자료구조 샘플 코드 및 설명](https://www.geeksforgeeks.org/data-structures/)
+1. [Geeks for Geeks](https://www.geeksforgeeks.org/data-structures/)
 2. [그 유명한 soen.kr, 구 winapi](http://soen.kr/)
