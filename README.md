@@ -13,7 +13,7 @@
 9. [Insert Sort](./Algorithm/insertSort.c)
 10. [Binary Search Tree](https://github.com/JoHwanhee/DataStructures/blob/master/BST.c)
 11. [HashTable](https://github.com/JoHwanhee/DataStructures/blob/master/hashtable.c)
-12. [Climb](./Algorithm/Climb.c)
+12. [Climb](./Algorithm/climb.c)
 13. [Graph](https://github.com/JoHwanhee/DataStructures/blob/master/graph.c)
 14. [BFS, DFS](./Algorithm/bfsdfs.c)
 
