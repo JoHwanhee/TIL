@@ -17,12 +17,13 @@
 13. [Graph](https://github.com/JoHwanhee/DataStructures/blob/master/graph.c)
 14. [BFS, DFS](./Algorithm/bfsdfs.c)
 
+## CS
+1. 실행, CPU, 컴파일(./CS/compile.md)
 
 ## ML
 1. [Tensorflow Object Detection API 호출하는 코드 만들기](./ML/tf001.md)
 2. [자신만의 데이터셋(소규모)으로 재학습 시켜보기](./ML/tf002.md)
 3. [tf.estimator 사용해서 성능 측정 해보기](./ML/tf003.md)
-
 
 ## TDD
 1. [의식적 연습으로 TDD, 리팩토링 연습하기](./TDD/의식적연습으로TDD,리팩토링하기.MD)
