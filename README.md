@@ -18,7 +18,7 @@
 14. [BFS, DFS](./Algorithm/bfsdfs.c)
 
 ## CS
-1. 실행, CPU, 컴파일(./CS/compile.md)
+1. [실행, CPU, 컴파일](./CS/compile.md)
 
 ## ML
 1. [Tensorflow Object Detection API 호출하는 코드 만들기](./ML/tf001.md)
