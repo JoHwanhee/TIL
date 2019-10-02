@@ -1,71 +1,62 @@
----
-### CentOS vsftpd 설치 및 설정
----
+### 자바 NIO 기반 Http Server 만들기
 
-#### 확인
-```
-rpm -qa vsftpd*
-```
+1. NIO SocketChannel 생성
 
-#### 설치
-```
-[root@s16786679aff ~]# yum install vsftpd -y                                                                    
-Failed to set locale, defaulting to C  
-Loaded plugins: fastestmirror, langpacks                                                                        
-                                                                                                      
-(중략)
-
-Installed:
-  vsftpd.x86_64 0:3.0.2-25.el7
-
-Complete!
+```java
+ServerSocketChannel serverSocketChannel = null;
+serverSocketChannel = ServerSocketChannel.open();
+serverSocketChannel.configureBlocking(true);
+serverSocketChannel.bind(new InetSocketAddress(PORT));
 ```
 
-#### vsftpd.conf 설정
+2. Wait
 ```
-vi /etc/vsftpd/vsftpd.conf
+SocketChannel socketChannel = serverSocketChannel.accept();
+InetSocketAddress isa = (InetSocketAddress) socketChannel.getRemoteAddress();
+System.out.println(isa.getHostName());
 
-anonymous_enable=NO
-local_enable=YES
-write_enable=YES
-local_umask=022
-dirmessage_enable=YES
-xferlog_enable=YES
-connect_from_port_20=YES
-xferlog_file=/var/log/xferlog
-xferlog_std_format=YES
-chroot_local_user=YES
-listen=YES
-pam_service_name=vsftpd
-userlist_enable=YES
-tcp_wrappers=YES
 ```
 
-#### vsftpd 시작
+3. Read
 ```
-service vsftpd start
+ByteBuffer buffer = ByteBuffer.allocate(4096);
+int byteCount = socketChannel.read(buffer);
+System.out.println(byteCount);
+buffer.flip();
+
+Charset charset = Charset.forName("UTF-8");
+String data = charset.decode(buffer).toString();
+
+System.out.println(data);
 ```
 
-#### vsftpd 자동시작
+4. Write
+
+테스트 용도이기에 HTTP Header를 하드코딩으로 넣어주었다.
 ```
-chkconfig vsftpd on
+byte[] data2 = "ok".getBytes();
+String content = "HTTP/1.1 200 OK\n" +
+				 "Server: Java HTTP NIO Server from hhcompany : 1.0\n" +
+				 "Date: " + new Date()+
+				 "Content-type: " +"text/plain" + "\n"+
+				 "Content-length: " + data2.length +"\n"+
+				 "\n";
+
+content+= "ok";
+
+ByteBuffer byteBuffer = null;
+byteBuffer = charset.encode(content);
+
+socketChannel.write(byteBuffer);
 ```
 
-#### test 계정 생성
+5. Close
 ```
-useradd testuser
-echo 'password' | passwd --stdin testuser
-```
-
-#### 접속테스트
-```
-root@JHH:/mnt/c/Users/JoHwanHui# ftp 0.0.0.0  
-Connected to 0.0.0.0                        
-220 (vsFTPd 3.0.2)                                  
-Name (106.10.35.123:root): testuser                 
-331 Please specify the password.                    
-Password:                                           
-230 Login successful.                               
-Remote system type is UNIX.                         
-Using binary mode to transfer files.    
+if (serverSocketChannel != null && serverSocketChannel.isOpen()) {
+	try {
+		serverSocketChannel.close();
+	} catch (IOException e1) {
+		e1.printStackTrace();
+	}
+}
 ```
