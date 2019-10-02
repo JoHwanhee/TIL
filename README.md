@@ -18,7 +18,7 @@
 14. [BFS, DFS](./Algorithm/bfsdfs.c)
 
 ## 프로젝트 회고
-1. [사내프로젝트-챗봇플랫폼개발]
+1. [사내프로젝트-챗봇플랫폼개발](./prj/chatbot.md)
 
 ## CS
 1. [실행, CPU, 컴파일](./CS/compile.md)
