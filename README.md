@@ -17,6 +17,9 @@
 13. [Graph](https://github.com/JoHwanhee/DataStructures/blob/master/graph.c)
 14. [BFS, DFS](./Algorithm/bfsdfs.c)
 
+## 개발 책 읽기
+1. [객체지향의 사실과 오해](./books/객체지향의사실과오해)
+
 ## 프로젝트 회고
 1. [사내프로젝트-챗봇플랫폼개발](./prj/chatbot.md)
 
