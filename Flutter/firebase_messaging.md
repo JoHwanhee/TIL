@@ -53,3 +53,12 @@ public final class FirebaseCloudMessagingPluginRegistrant {
 }
 
 ```
+
+FCM 2번 먹는 이슈
+```
+class MainActivity: FlutterActivity() {
+   /*  override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
+        GeneratedPluginRegistrant.registerWith(flutterEngine);
+    }*/
+}
+```
