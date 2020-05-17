@@ -2,7 +2,7 @@
 
 작년말 이사님의 추천(?)으로 올해 팀즈에서 플러터를 이용한 앱을 만들어보기로했습니다. 
 큰 주제는 머테리얼 디자인 가이드와 플러터 학습으로 방향을 잡고 실제 서비스할 수 있는 앱을 런칭하는 것까지 목표를 세웠습니다.
-이번 프로젝트에서 플루터를 통해 개발 하면서 느낀 주제들(머테리얼 가이드, UI 개발, 크로스플랫폼, 생산성)에 대해 이야기해볼까합니다.
+이번 프로젝트에서 플루터를 통해 개발 하면서 느낀 몇 가지 주제들에 대해 이야기해볼까합니다.
 
 ### 머테리얼 디자인 가이드
 플러터는 구글에서 개발하고 있는 프레임워크이며 머테리얼 디자인 가이드또한 구글에서 제시하는 UI 디자인 가이드다보니, 
@@ -78,13 +78,54 @@ return Scaffold(
 
 ![](https://flutter.dev/assets/tools/android-studio/hot-reload-36252b9c05984443ea5cd1960bab0f4ca904a6dfbe71165af4ed7f1b1c037124.gif)
 
+### CI/CD
+플러터도 CI/CD가 지원됩니다. 자료가 많진 않았지만, gitbub에 새롭게 도입된 actions에서 이 처리를 했습니다. 다음은 ubuntu 환경에서 jvm과 flutter를 설치하고 flutter package 설치, 테스트, 빌드, 플레이스토어 등록까지 이뤄지는 스크립트입니다. 간단하게 빌드, 테스트, 배포까지 자동화할 수 있었습니다.
+
+```yaml
+name: Flutter action
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-java@v1
+      with:
+        java-version: '12.x'
+    - uses: subosito/flutter-action@v1
+      with:
+        channel: 'stable' # or: 'dev' or 'beta'
+    - run: flutter pub get
+    - run: flutter test
+    - run: flutter build appbundle
+    - uses: r0adkll/upload-google-play@v1
+      with:
+        packageName: 
+        releaseFile: 
+        serviceAccountJson: /app/serviceAccount.json
+        track: beta
+        userFraction: 0.33
+        whatsNewDirectory: /distribution/whatsnew
+        mappingFile: /app/build/outputs/mapping/release/mapping.txt
+```
+
+### bloc 패턴
+플러터에도 Google이 권장하는 상태 관리 시스템이 있습니다. 해당 패턴으로 개발을 하면 상태관리와 관심사 분리가 용이해집니다. 비슷한 개발 패턴으로 MVP와 MVVM이 좋은 예입니다. BLOC는 MVVM에서 ViewModel과 비슷합니다. 간단한 그림을 통해 전체적인 구조도를 보면 좋을 것 같습니다. 
+
+![](https://miro.medium.com/max/1400/1*MqYPYKdNBiID0mZ-zyE-mA.png)
 
 ### 결론, 플러터 장점과 단점
 장단점을 논하기엔 짧은 기간의 개발이라 조심스럽고 섣부른 판단일수도있습니다만, 
 플러터 자체적으로는 실무에 적용하기에 적당히 고려해볼수도있으나 `크로스플랫폼`앱을 실무에 적용하는건 무리가 있을것이라 판단됩니다.
 
 그런데 만약 `크로스플랫폼`을 도입하기로 결정이 된 상태이며 RN/xamarin/flutter중 하나를 고려해야한다면, flutter는 좋은 선택이 될것이라 생각됩니다.
-
 
 ### 장점
 - 생산성/디버깅
