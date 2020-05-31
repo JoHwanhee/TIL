@@ -44,7 +44,7 @@ return Scaffold(
 
 그렇다면, Flutter는 어떻게 하나의 코드로 두 가지 플랫폼에서 앱을 그릴 수 있을까요? 자세히 알아보기전에 기존 Java나 object-c로 native app이 구동 되는 원리를 보겠습니다. 
 
-![image](uploads/1f35ccfc350433fdabf08cad9c947922/image.png)
+![image](img/1.png)
 
 Your App 부분이 네이티브 언어로 만들어진 부분입니다. 네이티브 앱은 OEM 위젯이라 하는 플랫폼이 지원하는 위젯들과 소통하여 어떤 위젯을 화면에 표시할지 정하고, 캔버스라는 화면 표시기를 통해 화면에 노출한다. 그리고 그 위젯은 사용자에게 입력을 받아 이벤트를 발생하고, 이 이벤트가 OEM 위젯을 통해 각 위젯의 이벤트로 변환된 뒤에 네이티브 앱으로 돌아온다. 개발자는 이 이벤트를 처리하는 코드를 작성해서 이벤트를 처리할 수 있다. 
 
@@ -52,13 +52,13 @@ Your App 부분이 네이티브 언어로 만들어진 부분입니다. 네이�
 
 이 불편한 점을 탈피하고자 크로스플랫폼이라는 개념이 나오기 시작했습니다. 이때 등장한것이 ReactNative 라는 크로스플랫폼입니다. Java Script를 이용해 하나의 코드로 앱을 만들고 Bridge에서 각기 다른 플랫폼별 OEM에 접근하여 네이티브 코드로 바꿔서 변환해주었고 이를통해 기존 네이티브 언어로 개발하는 것과 유사한 수준의 개발 경험을 만들어냈습니다.
 
-![image](uploads/fd8a1cd4b342ab5e2a1b8f175035134f/image.png)
+![image](img/2.png)
 
 하지만 결국 자바스크립트에서 브릿지를 거쳐야하는 이 메커니즘에는 성능 이슈를 계속 야기해왔고 구글은 이를 해결하기 위한 방법을 모색하기 시작했습니다. Flutter는 브릿지 부분을 과감히 빼버리고 아예 네이티브 언어로 코드를 컴파일 해서 앱에 넣어준다.
 
 자세히 알아보자. Flutter는 일종의 프레임워크이며 Dart로 작성된 앱을 컴파일하는 방식이다. Flutter자체적으로 Widget을 제공하며 코드를 작성하게 되면 Flutter Framework에서 자체적으로 네이티브 앱으로 렌더링 해 앱을 만든다.
 
-![image](uploads/9bf68272c5356acfe81bab8c74fd2bb2/image.png)
+![image](img/3.png)
 
 ## 2. Hot reload 기능
 Flutter는 앱의 성능 또한 놓치지 않으면서 Hot reload 기능을 제공할 수 있습니다.
@@ -67,7 +67,7 @@ Hot reload 기능은 앱이 동작하고 있는 동안 소스코드의 변경사
 
 이러한 기능은 개발 생산성에 있어 네이티브 언어를 개발과는 차원이 다른 수준의 디버깅 경험을 선사해주었습니다. 
 
-![image](uploads/78f2e8e63ef1dfb85ab718eb526918c0/image.png)
+![image](img/4.png)
 
 그렇다면 어떻게 이와 같은 일이 가능한걸까요? 핫 리로드 기능이 가능하단걸 알아내기 위해선 우선 Dart가 어떤식으로 컴파일 되는지 알아봐야합니다.
 
@@ -78,7 +78,7 @@ JIT 컴파일은 인터프리터처럼 실행 전에 코드를 컴파일하지 �
 
 실제로 flutter의 debug 모드의 apk파일과 release 모드의 apk파일을 열어보면 다음과 같은 파일들이 다르고 app의 size도 34MB -> 15.2MB로 확연히 다르단걸 확인 할 수 있습니다.
 
-![image](uploads/a850e7cbe97e0762db6dfc63199d113b/image.png)
+![image](img/5.png)
 
 디버그 빌드시 플러터는 kernel snaphost 방식을 채택하고 있어 생기는 byte code 파일들이며 Hot reload 기능을 제공하기 위해선 단순 JIT 컴파일보다 빠른 UI Rendering이 필요한데, kernel snaphost 방식으로 Hot reload 기능을 제공하고 있습니다. 
 - kernel_blob.bin
@@ -102,18 +102,18 @@ JIT 컴파일은 인터프리터처럼 실행 전에 코드를 컴파일하지 �
     ```console
     apktool d kernel_blob.bin
     ```
-    ![image](uploads/e4682ac3d725123821f0ea3eb9be0eda/image.png)
+    ![image](img/6.png)
      ```console
     strings kernel_blob.bin > extracted.dart
     ```
-    ![image](uploads/aea19052e9b4558c3efde4531b30c0b1/image.png)
+    ![image](img/7.png)
 
 ## 2-2. flutter의 스레드, isolate
 flutter는 기본적으로 단일 스레드에서 동작하고 Reactive Programming을 권장합니다. 이는 이번 프로젝트를 진행하면서도 대부분의 경우 문제가 되지 않았는데, 위에서 isolate라는 개념이 등장하여 간단하게 개념과 사용법 정도로만 훑고 지나가고자 합니다.
 
 isolate는 flutter에서 사용하는 스레드라고 생각하면 됩니다. 다만 특이한 점은 embedder라고 하는 녀셕이 관리하는데 다음 그림과 같이 flutter engine 레이어가 아닌 플랫폼 레이어에 위치하고 있습니다. 따라서 당연하게도 isolate 서로간의 메모리를 공유할 수 없게 되고 API를 통해 flutter engine과 통신하게 됩니다.
 
-![image](uploads/126189661b1ef1564ee8c3569fa73ad3/image.png)
+![image](img/8.png)
 
 다시 코드 레벨로 돌아와서 앞서 언급했듯이 flutter는 reactive programming 방식을 채택하고 있기때문에 일반적인 경우에선 별도로 isolate를 이용할 필요는 없으나, 비용처리가 큰 연산이 필요한 경우 flutter에서 제공하는 compute 함수를 이용하면 됩니다. compute는 별도의 isolate를 생성하여 특정 연산을 backgroud에서 동작하게 하는 방법이며 다음과 같이 사용할 수 있습니다.
 
@@ -149,7 +149,7 @@ Future<List<Photo>> fetchPhotos(http.Client client) async {
 ### 3-1 색상 가이드
 앱 전반적으로 사용되는 색상 가이드입니다. 주요 컬러값을 컬러 팔레트로 추출할 수 있으며 이는 특정 값의 값의 불투명도값을 50 100 200 ... 900 까지 지정하여 코드내에서 Opacity로 조절하는 것이 아니라 각각의 불투명도 값을 Hex code 추출하여 특정 컬러에대한 하나의 색상 팔레트를 완성할 수 있습니다.
 
-![image](uploads/e618cbfd1b97d564878f4eb828894d3d/image.png)
+![image](img/9.png)
  
 다음과 같이하면 플러터 코드 내에서 주요 컬러 팔레트를 쉽게 적용할 수 있습니다.
 
@@ -190,7 +190,7 @@ Color color = primary[100]
 ### 3-2 테마 적용
 또한 머티리얼 디자인 가이드에 맞는 주요 컬러셋을 맞춰 플러터 코드 내에서 쉽게 적용이 가능합니다. 아래는 이번 프로젝트에서 적용한 디자인 컬러 가이드입니다. 
 
-![image](uploads/9454f53693120ae616cc4ec97894de3e/image.png)
+![image](img/10.png)
 
 위에 대응되는 플러터 코드는 다음과 같습니다. 다음과 같이 적용해두면 앱 전반적으로 각 텍스트의 컬러값과 에러일때의 컬러값 등 모두 통일된 형태로 앱 내에 표시가 되어, 개별 컴포넌트별로 컬러값을 지정해야하는 수고스러움을 덜 수 있습니다.
 
@@ -315,7 +315,7 @@ MVVM패턴에서 중요하게 보는 점은 바로 이런 점 입니다. View(UI
 
 Flutter의 Bloc 패턴을 적용하면 다음 그림처럼 관심사가 분리됩니다.
 
-![image](uploads/945ffddd2d7b7ec78fd21bc26bdda405/image.png)
+![image](img/11.png)
 
 플러터 앱을 만들면 기본적으로 생성되는 카운터 예제를 통해 아주 간단하게 Bloc 패턴을 사용하는 예제를 보여드리도록 하겠습니다.
 
@@ -485,6 +485,6 @@ StreamBuilder<int>(
 
 하지만 플러터는 아직 성장단계이며 오픈소스 라이브러리의 이슈는 플러터의 성장에따라 이슈가 적어지리라 생각됩니다. 2018년도에 배우지 말아야할 언어 1위로 선정되기도 했지만 구글과 관련 개발자들의 노력으로 2019년도에는 Job market 부분을 제외하고선 모두 하위권으로 내려간 상태입니다. 
 
-![image](uploads/d1d3dfa65b5aa79ac58c38aa219bcaec/image.png)
+![image](img/12.png)
 - https://www.codementor.io/blog/worst-languages-to-learn-3phycr98zk
 
